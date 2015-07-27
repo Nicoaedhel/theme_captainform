@@ -1,0 +1,107 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+$cpf_color_label : #7F939D;
+$cpf_color_input : #444;
+$cpf_color_input_border : #CBD2D6;
+$cpf_color_input_border_focus : #989C9E;
+$cpf_color_button_background : #768187;
+$cpf_color_button : #fff;
+$cpf_color_input_error : #FA5655;
+$cpf_color_button_background_success : rgba(29,47,58,.6);
+$cpf_color_button_background_error : #FA5655;
+$cpf_font_size_input : 0.8rem;
+$cpf_font_size_label : 0.8rem;
+$cpf_font_size_button : 1rem;
+$cpf_font_size_input_error : 0.8rem;
+
+$cpf_radius : 4px; 
+
+* {
+    outline: none;
+}
+
+#form_contact{
+	@import "compass/reset";
+	-webkit-font-smoothing: antialiased;
+	font-family: Helvetica,Roboto,Arial,sans-serif;
+	margin:1rem;
+	input[type='text'], input[type='email'], input[type="checkbox"], textarea{
+		width:100%;
+		margin: 0.8rem 0rem 1.5rem;
+	    border: 3px solid $cpf_color_input_border;
+	    font-size: $cpf_font_size_input;
+	    padding: 0.8rem 0.8rem;
+	    width: 100%;
+	    color: $cpf_color_input;
+	    border-radius:$cpf_radius;
+	    transition: border-color 0.15s linear,background 0.15s linear;
+	    &:focus{
+	    	border-color: $cpf_color_input_border_focus;
+	    }
+	}
+	label{
+		color:$cpf_color_label;
+		font-size:$cpf_font_size_label;
+		text-transform:uppercase;
+		font-weight:bolder;
+	}
+	#form_copy{
+		margin: 0;
+		width: inherit;
+		margin-bottom:1rem;
+	}
+	#form_div_message{
+		margin-top:0.7rem;
+		textarea{
+			min-height:8rem;
+		}
+	}
+	#form_button{
+		text-transform: uppercase;
+    	color: $cpf_color_button;
+    	background:$cpf_color_button_background;
+    	border:0;
+    	cursor:pointer;
+    	width:100%;
+    	padding:1rem;
+    	font-size:$cpf_font_size_button;
+    	border-radius:$cpf_radius;
+	}
+
+	.form_error_span{
+		float:right;
+		font-size:$cpf_font_size_input_error;
+		color:$cpf_color_input_error;
+		text-transform:uppercase;
+	}
+
+	.form_input_error{
+		border-color : $cpf_color_input_error !important;
+		&:focus{
+			
+		}
+	}
+
+	.form_done{
+	    background: $cpf_color_button_background_success;
+	    color: #fff;
+	    text-align: center;
+	    padding:1rem;
+    	font-size:$cpf_font_size_button;
+    	border-radius:$cpf_radius;
+	}
+
+	.form_error{
+	    background: $cpf_color_button_background_error;
+	    color: #fff;
+	    text-align: center;
+	    padding:1rem;
+    	font-size:$cpf_font_size_button;
+    	border-radius:$cpf_radius;
+	}
+}

@@ -1,0 +1,128 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+* {
+  outline: none;
+}
+
+#form_contact {
+  -webkit-font-smoothing: antialiased;
+  font-family: Helvetica,Roboto,Arial,sans-serif;
+  margin: 1rem;
+}
+#form_contact html, #form_contact body, #form_contact div, #form_contact span, #form_contact applet, #form_contact object, #form_contact iframe,
+#form_contact h1, #form_contact h2, #form_contact h3, #form_contact h4, #form_contact h5, #form_contact h6, #form_contact p, #form_contact blockquote, #form_contact pre,
+#form_contact a, #form_contact abbr, #form_contact acronym, #form_contact address, #form_contact big, #form_contact cite, #form_contact code,
+#form_contact del, #form_contact dfn, #form_contact em, #form_contact img, #form_contact ins, #form_contact kbd, #form_contact q, #form_contact s, #form_contact samp,
+#form_contact small, #form_contact strike, #form_contact strong, #form_contact sub, #form_contact sup, #form_contact tt, #form_contact var,
+#form_contact b, #form_contact u, #form_contact i, #form_contact center,
+#form_contact dl, #form_contact dt, #form_contact dd, #form_contact ol, #form_contact ul, #form_contact li,
+#form_contact fieldset, #form_contact form, #form_contact label, #form_contact legend,
+#form_contact table, #form_contact caption, #form_contact tbody, #form_contact tfoot, #form_contact thead, #form_contact tr, #form_contact th, #form_contact td,
+#form_contact article, #form_contact aside, #form_contact canvas, #form_contact details, #form_contact embed,
+#form_contact figure, #form_contact figcaption, #form_contact footer, #form_contact header, #form_contact hgroup,
+#form_contact menu, #form_contact nav, #form_contact output, #form_contact ruby, #form_contact section, #form_contact summary,
+#form_contact time, #form_contact mark, #form_contact audio, #form_contact video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+#form_contact html {
+  line-height: 1;
+}
+#form_contact ol, #form_contact ul {
+  list-style: none;
+}
+#form_contact table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#form_contact caption, #form_contact th, #form_contact td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+#form_contact q, #form_contact blockquote {
+  quotes: none;
+}
+#form_contact q:before, #form_contact q:after, #form_contact blockquote:before, #form_contact blockquote:after {
+  content: "";
+  content: none;
+}
+#form_contact a img {
+  border: none;
+}
+#form_contact article, #form_contact aside, #form_contact details, #form_contact figcaption, #form_contact figure, #form_contact footer, #form_contact header, #form_contact hgroup, #form_contact main, #form_contact menu, #form_contact nav, #form_contact section, #form_contact summary {
+  display: block;
+}
+#form_contact input[type='text'], #form_contact input[type='email'], #form_contact input[type="checkbox"], #form_contact textarea {
+  width: 100%;
+  margin: 0.8rem 0rem 1.5rem;
+  border: 3px solid #CBD2D6;
+  font-size: 0.8rem;
+  padding: 0.8rem 0.8rem;
+  width: 100%;
+  color: #444;
+  border-radius: 4px;
+  transition: border-color 0.15s linear,background 0.15s linear;
+}
+#form_contact input[type='text']:focus, #form_contact input[type='email']:focus, #form_contact input[type="checkbox"]:focus, #form_contact textarea:focus {
+  border-color: #989C9E;
+}
+#form_contact label {
+  color: #7F939D;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+#form_contact #form_copy {
+  margin: 0;
+  width: inherit;
+  margin-bottom: 1rem;
+}
+#form_contact #form_div_message {
+  margin-top: 0.7rem;
+}
+#form_contact #form_div_message textarea {
+  min-height: 8rem;
+}
+#form_contact #form_button {
+  text-transform: uppercase;
+  color: #fff;
+  background: #768187;
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+#form_contact .form_error_span {
+  float: right;
+  font-size: 0.8rem;
+  color: #FA5655;
+  text-transform: uppercase;
+}
+#form_contact .form_input_error {
+  border-color: #FA5655 !important;
+}
+#form_contact .form_done {
+  background: rgba(29, 47, 58, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+#form_contact .form_error {
+  background: #FA5655;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
